@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Capital One Education 4 All</h1>
+    </header>
+    <main>
+        <section id="user-profiles">
+            <h2>User Profiles</h2>
+            <form id="profile-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username"><br>
+                <label for="goals">Financial Goals:</label>
+                <textarea id="goals" name="goals"></textarea><br>
+                <button type="submit">Save Profile</button>
+            </form>
+        </section>
+        <section id="personalized-dashboard">
+            <h2>Personalized Dashboard</h2>
+            <div id="advice">
+                <h3>Financial Advice</h3>
+                <p>Get personalized financial advice based on your profile.</p>
+            </div>
+            <div id="progress-trackers">
+                <h3>Progress Trackers</h3>
+                <p>Track your progress towards financial goals.</p>
+            </div>
+        </section>
+        <section id="interactive-tools">
+            <h2>Interactive Tools</h2>
+            <div id="budget-calculator">
+                <h3>Budget Calculator</h3>
+                <form id="budget-form">
+                    <label for="income-source">Income Source:</label>
+                    <input type="text" id="income-source" name="income-source" placeholder="e.g., Salary, Freelance"><br>
+                    <label for="income">Income Amount:</label>
+                    <input type="number" id="income" name="income" placeholder="Enter your income"><br>
+                    
+                    <label for="expense-category">Expense Category:</label>
+                    <input type="text" id="expense-category" name="expense-category" placeholder="e.g., Rent, Groceries"><br>
+                    <label for="expense-amount">Expense Amount:</label>
+                    <input type="number" id="expense-amount" name="expense-amount" placeholder="Enter your expense amount"><br>
+                    
+                    <label for="recurring-expense">Recurring Expense:</label>
+                    <input type="checkbox" id="recurring-expense" name="recurring-expense"><br>
+                    
+                    <button type="button" onclick="addExpense()">Add Expense</button><br>
+                    <button type="button" onclick="calculateBudget()">Calculate Budget</button>
+                </form>
+                <div id="budget-result"></div>
+            </div>
+            <div id="savings-planner">
+                <h3>Savings Planner</h3>
+                <form id="savings-form">
+                    <label for="savings-goal">Savings Goal:</label>
+                    <input type="number" id="savings-goal" name="savings-goal" placeholder="Enter your savings goal"><br>
+                    <label for="goal-description">Goal Description:</label>
+                    <input type="text" id="goal-description" name="goal-description" placeholder="e.g., Emergency Fund, Vacation"><br>
+                    <button type="button" onclick="planSavings()">Plan Savings</button>
+                </form>
+                <div id="savings-result"></div>
+            </div>
+            <div id="debt-manager">
+                <h3>Debt Manager</h3>
+                <form id="debt-form">
+                    <label for="debt-name">Debt Name:</label>
+                    <input type="text" id="debt-name" name="debt-name" placeholder="e.g., Credit Card, Loan"><br>
+                    <label for="debt-amount">Debt Amount:</label>
+                    <input type="number" id="debt-amount" name="debt-amount" placeholder="Enter debt amount"><br>
+                    <label for="debt-interest">Interest Rate (%):</label>
+                    <input type="number" id="debt-interest" name="debt-interest" placeholder="Enter interest rate"><br>
+                    <button type="button" onclick="addDebt()">Add Debt</button>
+                </form>
+                <div id="debt-result"></div>
+            </div>
+            <div id="loan-calculator">
+                <h3>Loan Calculator</h3>
+                <form id="loan-form">
+                    <label for="loan-amount">Loan Amount:</label>
+                    <input type="number" id="loan-amount" name="loan-amount" placeholder="Enter loan amount"><br>
+                    <label for="interest-rate">Interest Rate (%):</label>
+                    <input type="number" id="interest-rate" name="interest-rate" placeholder="Enter interest rate"><br>
+                    <label for="loan-term">Loan Term (years):</label>
+                    <input type="number" id="loan-term" name="loan-term" placeholder="Enter loan term"><br>
+                    <button type="button" onclick="calculateLoan()">Calculate Loan</button>
+                </form>
+                <div id="loan-result"></div>
+            </div>
+        </section>
+        <section id="educational-content">
+            <h2>Educational Content</h2>
+            <div id="articles">
+                <h3>Articles</h3>
+                <p>Read articles on various financial topics.</p>
+            </div>
+            <div id="videos">
+                <h3>Videos</h3>
+                <p>Watch tutorials on financial planning.</p>
+            </div>
+            <div id="quizzes">
+                <h3>Quizzes</h3>
+                <p>Test your financial knowledge with quizzes.</p>
+            </div>
+        </section>
+        <section id="community-support">
+            <h2>Community and Support</h2>
+            <div id="forums">
+                <h3>Discussion Forums</h3>
+                <p>Join forums to discuss financial topics.</p>
+            </div>
+            <div id="live-chat">
+                <h3>Live Chat Support</h3>
+                <p>Get real-time financial advice through live chat.</p>
+            </div>
+        </section>
+        <section id="integration-automation">
+            <h2>Integration and Automation</h2>
+            <div id="bank-integration">
+                <h3>Bank Account Integration</h3>
+                <form>
+                    <label for="bank-account">Bank Account:</label>
+                    <input type="text" id="bank-account" name="bank-account"><br>
+                    <button type="submit">Link Account</button>
+                </form>
+            </div>
+            <div id="reminders">
+                <h3>Automated Reminders</h3>
+                <p>Set up reminders for bill payments and savings contributions.</p>
+            </div>
+        </section>
+        <section id="gamification">
+            <h2>Game Section</h2>
+            <div id="rewards">
+                <h3>Rewards System</h3>
+                <p>Earn points and badges for achieving financial milestones.</p>
+            </div>
+            <div id="challenges">
+                <h3>Challenges and Competitions</h3>
+                <p>Participate in challenges and compete with others.</p>
+            </div>
+        </section>
+        <section id="security-privacy">
+            <h2>Security and Privacy</h2>
+            <div id="data-security">
+                <h3>Secure Data Storage</h3>
+                <p>Ensure your data is securely stored and encrypted.</p>
+            </div>
+            <div id="privacy-settings">
+                <h3>Privacy Settings</h3>
+                <p>Manage your privacy settings and control what information is shared.</p>
+            </div>
+        </section>
+        <section id="advanced-analytics">
+            <h2>Advanced Analytics</h2>
+            <div id="spending-analysis">
+                <h3>Spending Analysis</h3>
+                <p>Get detailed analysis of your spending habits.</p>
+            </div>
+            <div id="financial-forecasting">
+                <h3>Financial Forecasting</h3>
+                <p>Use predictive analytics to forecast your financial future.</p>
+            </div>
+        </section>
+        <section id="user-feedback">
+            <h2>User Feedback and Continuous Improvement</h2>
+            <div id="feedback-form">
+                <h3>Feedback Form</h3>
+                <form>
+                    <label for="feedback">Your Feedback:</label>
+                    <textarea id="feedback" name="feedback"></textarea><br>
+                    <button type="submit">Submit Feedback</button>
+                </form>
+            </div>
+        </section>
+        <section id="additional-resources">
+            <h2>Additional Resources</h2>
+            <div id="local-services">
+                <h3>Local Financial Services</h3>
+                <p>Find information about local financial services.</p>
+            </div>
+            <div id="emergency-resources">
+                <h3>Emergency Resources</h3>
+                <p>Get advice for managing financial emergencies.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Financial Dashboard</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
