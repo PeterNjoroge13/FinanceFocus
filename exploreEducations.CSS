@@ -1,0 +1,67 @@
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #505F98;
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 160px;
+    color: #004977;
+    background-color: #FFFFFF;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    width: 122px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.header .logo h1 {
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.header .nav {
+    display: flex;
+}
+.nav-button {
+    padding: 12px 24px; /* Increased padding for a larger button */
+    background-color: #003366; /* Darker blue for a more subdued, professional look */
+    color: white;
+    border: none;
+    border-radius: 5px; /* Slightly increased border-radius for a more pill-like shape */
+    cursor: pointer;
+    font-size: 18px; /* Increased font size for better readability */
+    font-weight: bold; /* Make text bold for emphasis */
+    margin-left: 30px; /* Slightly more margin to separate it from other nav items */
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #002244; /* Even darker blue on hover for a subtle interactive effect */
+}
+
+
+
+.header .nav-item {
+    margin-left: 30px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #004977;
+}
+
+.header .nav-item:hover {
+    text-decoration: underline;
+}
