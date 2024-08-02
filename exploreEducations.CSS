@@ -1,42 +1,50 @@
-
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
-    color: #505F98;
+    color: #000000;
     background-color: #FFFFFF;
     overflow-x: hidden;
-}
-
-.header {
+ }
+ 
+ .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 160px;
-    color: #004977;
+    color: black;
     background-color: #FFFFFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ }
+.heading {
+    font-size: 24px;
+    color: #004977;
+    text-align: left;
 }
+ main {
+    padding: 20px;;
+ }
 
-.header .logo {
+ .header .logo {
     display: flex;
     align-items: center;
-}
-
-.header .logo img {
+ }
+ 
+ .header .logo img {
     width: 122px;
     height: auto;
     margin-right: 20px;
-}
-
-.header .logo h1 {
+ }
+ 
+ .header .logo h1 {
     font-size: 60px;
     font-weight: 800;
-}
-
-.header .nav {
+ }
+ 
+ .header .nav {
     display: flex;
-}
-.nav-button {
+ }
+ .nav-button {
     padding: 12px 24px; /* Increased padding for a larger button */
     background-color: #003366; /* Darker blue for a more subdued, professional look */
     color: white;
@@ -47,21 +55,170 @@ body {
     font-weight: bold; /* Make text bold for emphasis */
     margin-left: 30px; /* Slightly more margin to separate it from other nav items */
     transition: background-color 0.3s ease;
-}
-
-.nav-button:hover {
+ }
+ 
+ .nav-button:hover {
     background-color: #002244; /* Even darker blue on hover for a subtle interactive effect */
-}
-
-
-
-.header .nav-item {
+ }
+ .header .nav-item {
     margin-left: 30px;
     font-size: 20px;
     text-decoration: none;
     color: #004977;
+ }
+ 
+ .header .nav-item:hover {
+    text-decoration: underline;
+ }
+
+ .title-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: none;
+    text-align: center;
+ }
+h2 {
+   margin-bottom: none; 
+   color: #004977;
+   margin-right: auto;
+   height: auto;
+}
+ .hamburger-menu {
+    width: 90px;
+    height: auto;
+    margin-right: 10px;
+ }
+ .cta {
+    height: 100px;body {
+        font-family: 'Open Sans', sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #505F98;
+        background-color: #FFFFFF;
+        overflow-x: hidden;
+     }}
+     
+     .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 160px;
+        color: #004977;
+        background-color: #FFFFFF;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     }
+     main {
+        padding: 20px;
+        text-align: center;
+     }
+     .header .logo {
+        display: flex;
+        align-items: center;
+     }
+     
+     .header .logo img {
+        width: 122px;
+        height: auto;
+        margin-right: 20px;
+     }
+     
+     .header .logo h1 {
+        font-size: 60px;
+        font-weight: 800;
+     }
+     
+     .header .nav {
+        display: flex;
+     }
+     .nav-button {
+        padding: 12px 24px; /* Increased padding for a larger button */
+        background-color: #003366; /* Darker blue for a more subdued, professional look */
+        color: white;
+        border: none;
+        border-radius: 5px; /* Slightly increased border-radius for a more pill-like shape */
+        cursor: pointer;
+        font-size: 18px; /* Increased font size for better readability */
+        font-weight: bold; /* Make text bold for emphasis */
+        margin-left: 30px; /* Slightly more margin to separate it from other nav items */
+        transition: background-color 0.3s ease;
+     }
+     
+     .nav-button:hover {
+        background-color: #002244; /* Even darker blue on hover for a subtle interactive effect */
+     }
+     
+     
+     .header .nav-item {
+        margin-left: 30px;
+        font-size: 20px;
+        text-decoration: none;
+        color: #004977;
+     }
+     
+     .header .nav-item:hover {
+        text-decoration: underline;
+     }
+
+     .explaining {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 18px;
+        color: #505F98;
+    }
+     .products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .product {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin: 10px;
+        padding: 20px;
+        width: 250px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        text-align: left;
+    }
+
+    .title-section {
+        display: flex;
+        align-items: left;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .product input {
+        margin-right: 10px;
+    }
+    
+    .product strong {
+        color: #333;
+}
+ .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
-.header .nav-item:hover {
-    text-decoration: underline;
+.product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.product input {
+    margin-right: 10px;
+}
+
+.product strong {
+    color: #333;
 }
